@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebTagDebugger Panel</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div class="header">
+    <h1>WebTagDebugger</h1>
+    <div class="controls">
+      <button id="clearBtn">Clear</button>
+      <button id="captureBtn">Pause Capture</button>
+      <div class="filter-container">
+        <input type="text" id="filterInput" placeholder="Filter requests...">
+        <select id="providerFilter">
+          <option value="all">All Providers</option>
+          <option value="Google Analytics">Google Analytics</option>
+          <option value="Adobe Analytics">Adobe Analytics</option>
+          <option value="Meta Pixel">Meta Pixel</option>
+          <option value="Google Tag Manager">Google Tag Manager</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="request-list">
+      <table id="requestTable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Provider</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="requestTableBody">
+          <!-- Requests will be populated here -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="request-details">
+      <div class="details-header">
+        <h2>Request Details</h2>
+      </div>
+      <div class="details-content" id="requestDetails">
+        <div class="placeholder">Select a request to view details</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="panel.js"></script>
+</body>
+</html>

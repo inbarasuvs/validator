@@ -1,4 +1,3 @@
-//to be deleted now
 // Elements
 const statusIndicator = document.getElementById('statusIndicator');
 const statusText = document.getElementById('statusText');
